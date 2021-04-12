@@ -21,6 +21,12 @@ function App() {
       		[name]: value
     });
    }
+
+	function OnReset(){
+		console.log('Reset');
+		setItem({txtName:'',txtDesc:'',txtPassword:'',sltgender:'Male'})
+	}
+
    function handelOnSubmit(e){
 		e.preventDefault();
 		console.log(item);
@@ -88,7 +94,7 @@ function App() {
 									className="btn btn-primary">Submit</button>&nbsp; 
 						
 							<button type="reset" 
-									className="btn btn-danger">Delete ALL</button>
+									className="btn btn-danger" onClick={OnReset}>Reset ALL</button>
 						
 						</form>
 					</div>

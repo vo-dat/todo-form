@@ -15,7 +15,7 @@ function ListInfo(props) {
             {listInfo.map((info,index)=>(
                 <tr key={index}>
                 <td>{info.txtName}</td>
-                <td>{info.txtPassword}</td>
+                <td >{info.txtPassword}</td>
                 <td>{info.sltgender}</td>
             </tr>
             ))}    
